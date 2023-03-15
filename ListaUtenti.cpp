@@ -38,7 +38,7 @@ void ListaUtenti::addU(Utente u) {
         utenti.push_back(u);
     }
     else{
-        cout << "Utente gia' esistente";
+        cout << "Utente gia' esistente" << endl;
     }
 }
 
@@ -184,6 +184,19 @@ int ListaUtenti::contaUtenti() {
     }
     return nu;
 }
+
+bool ListaUtenti::Listediuvuote(Utente u) {
+    bool vuota = true;
+    std::map<Lista,Utente>::iterator itr = liste.begin();
+    while(itr != liste.end()){
+        if(itr -> second.getnome() == u.getnome())
+            vuota = false;
+    }
+
+    return vuota;
+}
+
+
 
 
 

@@ -36,7 +36,7 @@ int Oggetto::getQuantita() const {
     return quantita;
 }
 
-const string Oggetto::getCategoria() const {
+string Oggetto::getCategoria() const {
 
     string n = reinterpret_cast<const char *>(std::toupper(nome[0]));
     if(std::find(categories.frutta.begin(),categories.frutta.end(),n)!=categories.frutta.end())

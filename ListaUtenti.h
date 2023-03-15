@@ -36,6 +36,8 @@ public:
 
     int contaUtenti();
 
+    bool Listediuvuote(Utente u);
+
     Utente getUtentefromlistpos(int pos) const; //ritorna l'utente nella posizione pos dalla lista degli utenti
 
     Lista getListafrommostraLperU(int pos,Utente u) const; //ritorna la lista nella posizione pos nella lista delle liste di un utente

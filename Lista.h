@@ -24,13 +24,15 @@ public:
 
     string getNomeLista() const;
 
-    void mostra();
+    void mostraOgg();
 
     void addOggetto(Oggetto o);
 
     void removeOggetto(int i);
 
     void markAcquistato(int i);
+
+     int contaOggperL();
 
     virtual ~Lista();
 
