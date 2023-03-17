@@ -117,7 +117,7 @@ void ListaUtenti::removeL(const Lista& l, Utente u) {
 void ListaUtenti::mostraLperU(Utente u) {
 
     std::map<Lista,Utente>::iterator itr = liste.begin();
-    int n = 0;
+    int n = 1;
     cout << "========================================" << endl;
     while(itr != liste.end()){
 

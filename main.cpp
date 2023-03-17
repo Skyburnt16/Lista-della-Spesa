@@ -46,6 +46,7 @@ int main() {
                         l.mostraLperU(l.getUtentefromlistpos(ss)); //mostra le liste per l'utente selezionato
                         secondomenu = true;
                         while (secondomenu) {
+
                             cout << "=========== " << l.getUtentefromlistpos(ss).getnome() << "========" << endl;
                             cout << "1. Aggiungi una lista " << endl;
                             cout << "2. Rimuovi una lista " << endl;
@@ -83,7 +84,9 @@ int main() {
                                     if (so > l.contaListePerU(l.getUtentefromlistpos(ss))) {
                                         cout << "Scelta non valida" << endl;
                                         break;
+
                                     } else {
+
                                         if (l.getListafrommostraLperU(so, l.getUtentefromlistpos(ss)).contaOggperL() ==
                                             0) { // controlla se ci sono oggetti nella lista selezionata
 
